@@ -48,7 +48,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   }
 
   void signUp() async {
-    if (formKey.currentState!.validate()) {
+    if (formKey.currentState!.validate() && _image != null) {
       setState(() {
         isLoading = true;
       });
