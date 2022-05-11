@@ -215,7 +215,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       const Text('already have an account '),
                       GestureDetector(
                         onTap: () {
-                          Navigator.of(context).push(MaterialPageRoute(
+                          Navigator.of(context).pushReplacement(MaterialPageRoute(
                               builder: (context) => const LoginScreen()));
                         },
                         child: const Text(
